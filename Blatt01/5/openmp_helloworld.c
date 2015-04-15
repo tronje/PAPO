@@ -9,6 +9,9 @@ int main(int argc, char* argv[]) {
         return EXIT_FAILURE;
     }
 
+    // schnell und dreckig die Option,
+    // thread Anzahl festzulegen eingebaut
+    // nuetzlich fuer aufgabe 6
     if(argc == 2) {
         omp_set_num_threads(atoi(argv[1]));
     }
