@@ -2,7 +2,17 @@
 #include <stdlib.h>
 #include <omp.h>
 
-int main(void) {
+int main(int argc, char* argv[]) {
+
+    if(argc > 2) {
+        fprintf(stderr, "Too many arguments!");
+        return EXIT_FAILURE;
+    }
+
+    if(argc == 2) {
+        omp_set_num_threads(atoi(argv[1]));
+    }
+
     // Das pragma, das openmp Parallelisierung initiiert.
     // Hier wurde das Minimum an Argumenten/Optionen verwendet
     // Mehr muss auch nicht gemacht werden, um mit openmp

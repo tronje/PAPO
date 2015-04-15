@@ -1,0 +1,8 @@
+Abgabe von Tronje Krabbe
+
+Aufgabe 6.2
+Mir faellt auf, dass die Nodes unterschiedlich schnell fertig werden,
+da die Outputs in unterschiedlicher Reihenfolge in die Ausgabedatei
+geschrieben werden. Dies liegt daran, dass die Nodes natuerlich unabhaenig
+voneinander arbeiten, und dementsprechend auch Prozesse unterschiedlich schnell
+auf jeder Node ausgeführt werden.
