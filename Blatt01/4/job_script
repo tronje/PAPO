@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#SBATCH -N 2
+
+#SBATCH -n 8
+
+#SBATCH --ntasks-per-node 4
+
+# Wir fuehren das Programm aus:
+srun mpi_helloworld.c
+
+echo fertig > job_script.out

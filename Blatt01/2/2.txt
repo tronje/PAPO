@@ -1,0 +1,33 @@
+Abgabe von Tronje Krabbe
+
+Aufgabe 2
+$> git help
+# hab ich jetzt mal nicht gepastet
+
+$> git init
+Initialized empty Git repository in /home/krabbe/repo/.git/
+
+$> touch datei.c
+$> git add datei.c
+
+$> git commit -m "add datei.c"
+[master e9a188c] add datei.c
+1 file changed, 0 insertions(+), 0 deletions(-)
+
+$> git add datei.c
+$> git commit -m "hallo"
+[master 526ae3a] hallo
+ 1 file changed, 1 insertion(+)
+
+$> git log
+commit 526ae3a024364eab8d280c8162c9d0ba9cc32b50
+Author: Tronje <2krabbe@informatik.uni-hamburg.de>
+Date:   Wed Apr 15 16:44:18 2015 +0200
+
+hallo
+
+commit e9a188cc4743a90caf1c77cea32271bead3ef75a
+Author: Tronje <2krabbe@informatik.uni-hamburg.de>
+DDate:   Wed Apr 15 16:43:04 2015 +0200
+
+add datei.c
