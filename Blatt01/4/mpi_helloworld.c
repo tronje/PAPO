@@ -30,6 +30,6 @@ int main(int argc, char* argv[]) {
     // eines MPI-Programms aufgerufen werden.
     MPI_Finalize();
 
-    // und wir sind fertig, returnen also Erfolg and die Shell
+    // und wir sind fertig, returnen also Erfolg an die Shell
     return EXIT_SUCCESS;
 }

@@ -13,7 +13,13 @@ int main(int argc, char* argv[]) {
     // thread Anzahl festzulegen eingebaut
     // nuetzlich fuer aufgabe 6
     if(argc == 2) {
-        omp_set_num_threads(atoi(argv[1]));
+        int temp;
+        if(!(temp = atoi(argv[1]))) {
+            fprintf(stderr, "Invalid argument!\n");
+            fprintf(stderr, "Usage: ./openmp_helloworld.x [num]\n");
+            return EXIT_FAILURE;
+        }
+        omp_set_num_threads(temp);
     }
 
     // Das pragma, das openmp Parallelisierung initiiert.
@@ -26,5 +32,5 @@ int main(int argc, char* argv[]) {
     // werden sollen
     #pragma omp parallel
     printf("Hello World from Thread %d\n", omp_get_thread_num());
-    return 0;
+    return EXIT_SUCCESS;
 }
