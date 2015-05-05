@@ -1,0 +1,6 @@
+Abgabe von Tronje Krabbe
+
+zu 19: warum gibt's keine Lektion 19? :)
+zu 20: warum ist da ein Ordner mit den Dateien von Lektion 18, sowie
+    zwei Python-Scripts drin, von denen eins corrupted zu sein scheint?
+zu 23: warum gibt's die auch nicht?
