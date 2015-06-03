@@ -1,3 +1,6 @@
 *.x
 *.o
 *.tar.gz
+*.aux
+*.log
+build

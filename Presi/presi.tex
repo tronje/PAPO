@@ -65,6 +65,7 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{amsmath}
+\usepackage{minted}
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
@@ -163,8 +164,36 @@ Praktikum Parallele Programmierung\\
 
 %------------------------------------------------
 
-\begin{frame}
-    \frametitle{asd}
+\begin{frame}[fragile]
+    \frametitle{Code}
+    \begin{minted}[linenos,
+                   samepage,
+                   fontsize=\tiny,
+                   tabsize=2]{cpp}
+class Objects
+{
+    sortedlist<vector_3D<double>> position;
+    sortedlist<vector_3D<double>> velocity;
+    sortedlist<double> radius;
+    sortedlist<double> mass;
+
+    void add(vector_3D<double> position, vector_3D<double>  velo, double r, doubble m)
+    {
+        position.add(position)
+        velocity.add(velo)
+        radius.add(r)
+        mass.add(m)
+    }
+    vector<Object_data>  calculate_collision(vector<unsigned long>)
+    {
+        /*
+        hier wird berechnet, ob mehrere Objekte mit der Gesamtmasse der
+        kollidierenden Objekte gebildet werden,
+        oder ob nur ein neues bei der Kollision entsteht.
+        */
+    }
+}
+    \end{minted}
 \end{frame}
 
 %------------------------------------------------
@@ -175,8 +204,8 @@ Praktikum Parallele Programmierung\\
 %------------------------------------------------
 
 \begin{frame}
-    \frametitle{lol}
-
+    \frametitle{Projektplan}
+    Einmal wöchentlich treffen bis es fertig ist. :)
 \end{frame}
 
 %------------------------------------------------
