@@ -177,7 +177,7 @@ class Objects
     sortedlist<double> radius;
     sortedlist<double> mass;
 
-    void add(vector_3D<double> position, vector_3D<double>  velo, double r, doubble m)
+    void add(vector_3D<double> position, vector_3D<double>  velo, double r, double m)
     {
         position.add(position)
         velocity.add(velo)
@@ -190,6 +190,7 @@ class Objects
         hier wird berechnet, ob mehrere Objekte mit der Gesamtmasse der
         kollidierenden Objekte gebildet werden,
         oder ob nur ein neues bei der Kollision entsteht.
+        Außerdem: Größe, Radius, Geschwindigkeitsvektor.
         */
     }
 }
@@ -216,7 +217,17 @@ class Objects
 %------------------------------------------------
 
 \begin{frame}
-    \frametitle{rofl}
+    \frametitle{Parallelisierung}
+    \begin{enumerate}
+        \item Naiv: Aufteilung nach Index (jeder Prozess bekommt $n/p$ Objekte)
+        \item Cool(?): Aufteilung nach Anzahl beeinflussten Objekten
+        \begin{itemize}
+            \item Ein Objekt hat Einfluss auf unterschiedlich viele andere Objekte.
+                Je nachdem, wie viele beeinflusst werden, muss mehr berechnet werden.
+                Verteilt man Objekte nach dieser Gewichtung, kann die Last auf Prozesse
+                optimiert werden.
+        \end{itemize}
+    \end{enumerate}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
